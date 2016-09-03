@@ -1,6 +1,6 @@
 # Class
 
-## Class基本语法
+## 一、Class基本语法
 
 ### 概述
 
@@ -133,7 +133,7 @@ const MyClass = class { /* ... */ };
 
 
 
-## Class的继承
+## 二、Class的继承
 
 ### 通过extends关键字实现继承
 
@@ -199,7 +199,7 @@ class B extends A {
 上面代码中，子类通过`super`关键字，调用父类实例的`_p`属性。
 
 
-## 原生构造函数的继承
+### 原生构造函数的继承
 
 原生构造函数是指语言内置的构造函数，通常用来生成数据结构。ECMAScript的原生构造函数大致有下面这些。
 
@@ -231,7 +231,7 @@ arr[0] // undefined
 ```
 
 
-## Class的取值函数（getter）和存值函数（setter）
+### Class的取值函数（getter）和存值函数（setter）
 
 与ES5一样，在Class内部可以使用`get`和`set`关键字，对某个属性设置存值函数和取值函数，拦截该属性的存取行为。
 
@@ -260,3 +260,55 @@ inst.prop
 上面代码中，`prop`属性有对应的存值函数和取值函数，因此赋值和读取行为都被自定义了。
 
 存值函数和取值函数是设置在属性的descriptor对象上的。
+
+
+### Class的静态方法
+
+类相当于实例的原型，所有在类中定义的方法，都会被实例继承。如果在一个方法前，加上static关键字，就表示该方法不会被实例继承，而是直接通过类来调用，这就称为“静态方法”。
+
+```javascript
+class Foo {
+  static classMethod() {
+    return 'hello';
+  }
+}
+
+Foo.classMethod() // 'hello'
+
+var foo = new Foo();
+foo.classMethod()
+// TypeError: foo.classMethod is not a function
+```
+
+上面代码中，`Foo`类的`classMethod`方法前有`static`关键字，表明该方法是一个静态方法，可以直接在`Foo`类上调用（`Foo.classMethod()`），而不是在`Foo`类的实例上调用。如果在实例上调用静态方法，会抛出一个错误，表示不存在该方法。
+
+
+父类的静态方法，可以被子类继承。
+
+```javascript
+class Foo {
+  static classMethod() {
+    return 'hello';
+  }
+}
+
+class Bar extends Foo {
+}
+
+Bar.classMethod(); // 'hello'
+```
+
+父类的静态方法，可以被子类继承。
+
+```javascript
+class Foo {
+  static classMethod() {
+    return 'hello';
+  }
+}
+
+class Bar extends Foo {
+}
+
+Bar.classMethod(); // 'hello'
+```
