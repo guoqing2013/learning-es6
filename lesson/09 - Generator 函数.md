@@ -41,4 +41,6 @@ hw.next()
 // { value: undefined, done: true }
 ```
 
+每一次当我们调用next()时，generator执行下一个循环迭代然后暂停。
+
 调用Generator函数，返回一个遍历器对象，代表Generator函数的内部指针。以后，每次调用遍历器对象的`next`方法，就会返回一个有着`value`和`done`两个属性的对象。`value`属性表示当前的内部状态的值，是`yield`语句后面那个表达式的值；`done`属性是一个布尔值，表示是否遍历结束。
