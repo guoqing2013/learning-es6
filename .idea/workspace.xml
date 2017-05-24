@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="962ae137-c5c1-49f0-8030-ab19d50f3442" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/guoqing.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lesson/06 - 模板字符串.md" afterPath="$PROJECT_DIR$/lesson/03 - 模板字符串.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lesson/03 - 模板字符串.md" afterPath="$PROJECT_DIR$/lesson/06 - 模板字符串.md" />
     </list>
     <ignored path="learning-es6.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,11 +36,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="03 - 模板字符串.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lesson/03 - 模板字符串.md">
+      <file leaf-file-name="06 - 模板字符串.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lesson/06 - 模板字符串.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.77884614">
-              <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
+            <state vertical-scroll-proportion="-8.0">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="03 - import &amp; export.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lesson/03 - import &amp; export.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3028846">
+              <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -203,10 +213,21 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lesson/03 - 模板字符串.md">
+    <entry file="file://$PROJECT_DIR$/lesson/06 - 模板字符串.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.77884614">
-          <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
+        <state vertical-scroll-proportion="-8.0">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson/03 - import &amp; export.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3028846">
+          <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
