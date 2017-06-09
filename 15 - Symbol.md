@@ -133,7 +133,7 @@ Symbol.for()生成新的Symbol会被登记在全局环境中供搜索，而 Symb
 
 一个将对象转化为基本数据类型的方法。
 
-19. Symbol.toStringTag
+10. Symbol.toStringTag
 
 用于对象的默认描述的字符串值。使用Object.prototype.toString().
 
