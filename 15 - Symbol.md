@@ -113,31 +113,31 @@ Symbol.for()生成新的Symbol会被登记在全局环境中供搜索，而 Symb
 
 一个确定一个构造器对象识别的对象是否为它的实例的方法。使用 instanceof.
 
-1. Symbol.isConcatSpreadable
+2. Symbol.isConcatSpreadable
 
 一个布尔值，表示该对象使用Array.prototype.concat()时，是否可以展开。使用Array.prototype.concat().
 
-1. Symbol.species 
+3. Symbol.species 
 	
-1. Symbol.match
+4. Symbol.match
 
-1. Symbol.replace
+5. Symbol.replace
 
-1. Symbol.search
+6. Symbol.search
 
-1. Symbol.split
+7. Symbol.split
 
-1. Symbol.iterator
+8. Symbol.iterator
 
-1. Symbol.toPrimitive
+9. Symbol.toPrimitive
 
 一个将对象转化为基本数据类型的方法。
 
-1. Symbol.toStringTag
+19. Symbol.toStringTag
 
 用于对象的默认描述的字符串值。使用Object.prototype.toString().
 
-1. Symbol.unscopables
+11. Symbol.unscopables
 
 拥有和继承属性名的一个对象的值被排除在与环境绑定的相关对象外。
 
