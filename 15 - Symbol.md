@@ -15,7 +15,7 @@ JS的数据类型：
 
 Symbol 是一种特殊的、不可变的数据类型，可以作为对象属性的标识符使用。凡是属性名属于 Symbol 类型，就都是独一无二的，可以保证不会与其他属性名产生冲突。
 
-##语法
+## 语法
 `Symbol([description])`
 
 description 
@@ -109,35 +109,35 @@ Symbol.for()生成新的Symbol会被登记在全局环境中供搜索，而 Symb
 
 除了定义自己使用的Symbol值以外，ES6还提供了11个内置的Symbol值，指向语言内部使用的方法。
 
-（1）Symbol.hasInstance 
+1. Symbol.hasInstance 
 
 一个确定一个构造器对象识别的对象是否为它的实例的方法。使用 instanceof.
 
-（2）Symbol.isConcatSpreadable
+1. Symbol.isConcatSpreadable
 
 一个布尔值，表示该对象使用Array.prototype.concat()时，是否可以展开。使用Array.prototype.concat().
 
-（3）Symbol.species 
+1. Symbol.species 
 	
- (4) Symbol.match
+1. Symbol.match
 
- (5) Symbol.replace
+1. Symbol.replace
 
- (6) Symbol.search
+1. Symbol.search
 
- (7) Symbol.split
+1. Symbol.split
 
- (8) Symbol.iterator
+1. Symbol.iterator
 
-（9）Symbol.toPrimitive
+1. Symbol.toPrimitive
 
 一个将对象转化为基本数据类型的方法。
 
-（10）Symbol.toStringTag
+1. Symbol.toStringTag
 
 用于对象的默认描述的字符串值。使用Object.prototype.toString().
 
-（11）Symbol.unscopables
+1. Symbol.unscopables
 
 拥有和继承属性名的一个对象的值被排除在与环境绑定的相关对象外。
 
