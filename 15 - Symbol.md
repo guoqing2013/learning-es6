@@ -102,3 +102,82 @@ Symbol.keyFor(s2) // undefined
 ```
 
 Symbol.for()生成新的Symbol会被登记在全局环境中供搜索，而 Symbol()不会。
+
+
+## 内置的Symbol值
+
+
+除了定义自己使用的Symbol值以外，ES6还提供了11个内置的Symbol值，指向语言内部使用的方法。
+
+（1）Symbol.hasInstance 
+
+一个确定一个构造器对象识别的对象是否为它的实例的方法。使用 instanceof.
+
+（2）Symbol.isConcatSpreadable
+
+一个布尔值，表示该对象使用Array.prototype.concat()时，是否可以展开。使用Array.prototype.concat().
+
+（3）Symbol.species 
+	
+ (4) Symbol.match
+
+ (5) Symbol.replace
+
+ (6) Symbol.search
+
+ (7) Symbol.split
+
+ (8) Symbol.iterator
+
+（9）Symbol.toPrimitive
+
+一个将对象转化为基本数据类型的方法。
+
+（10）Symbol.toStringTag
+
+用于对象的默认描述的字符串值。使用Object.prototype.toString().
+
+（11）Symbol.unscopables
+
+拥有和继承属性名的一个对象的值被排除在与环境绑定的相关对象外。
+
+
+
+### Symbol.iterator 
+
+对象的Symbol.iterator属性，指向该对象的默认遍历器方法。
+
+```javascript
+var myIterable = {};
+myIterable[Symbol.iterator] = function* () {
+  yield 1;
+  yield 2;
+  yield 3;
+};
+
+[...myIterable] // [1, 2, 3]
+```
+
+对象进行`for...of`循环时，会调用`Symbol.iterator`方法，返回该对象的默认遍历器
+
+```javascript
+class Collection {
+  *[Symbol.iterator]() {
+    let i = 0;
+    while(this[i] !== undefined) {
+      yield this[i];
+      ++i;
+    }
+  }
+}
+
+let myCollection = new Collection();
+myCollection[0] = 1;
+myCollection[1] = 2;
+
+for(let value of myCollection) {
+  console.log(value);
+}
+// 1
+// 2
+```
