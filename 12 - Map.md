@@ -74,7 +74,7 @@ for (let item of map.entries()) {
 // "F" "no"
 // "T" "yes"
 
-// 或者
+// 使用 解构 来将键值对拆解为两个独立的变量：
 for (let [key, value] of map.entries()) {
   console.log(key, value);
 }
