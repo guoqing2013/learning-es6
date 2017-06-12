@@ -20,7 +20,7 @@ Point.prototype.toString = function () {
 (2) ES6 定义类
 ```javascript
 class Point {
-  constructor(x, y) {
+  constructor(x, y) { 
     this.x = x;
     this.y = y;
   }
@@ -31,8 +31,9 @@ class Point {
 }
 ```
 
-ES5的构造函数Point，对应ES6的Point类的构造方法。
-ES6类的所有方法都定义在类的prototype属性上面。
+`this`关键字则代表实例对象
+
+ES6类的所有方法(上例的constructor、toString)都定义在类的prototype属性上面。
 
 
 (3) 使用`Object.assign`方法可以一次向类添加多个方法。
@@ -91,6 +92,23 @@ class Square{
   }
 }
 ```
+
+### constructor 方法
+
+constructor方法是类的默认方法，通过new命令生成对象实例时，自动调用该方法。一个类必须有constructor方法，如果没有显式定义，一个空的constructor方法会被默认添加。
+
+```javascript
+class Foo {
+  constructor() {
+    return Object.create(null);
+  }
+}
+
+new Foo() instanceof Foo
+// false
+```
+
+
 
 
 ### name属性
