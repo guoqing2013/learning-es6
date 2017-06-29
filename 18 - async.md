@@ -76,3 +76,29 @@ async 表示这是一个async函数，await只能用在这个函数里面。
 await 表示在这里等待promise返回结果了，再继续执行。
 
 await 后面跟着的应该是一个promise对象（当然，其他返回值也没关系，只是会立即执行，不过那样就没有意义了…）
+
+
+## 捕获错误
+
+async 函数可以正常的返回结果和抛出异常。await 函数调用即可拿到结果，在外面包上 try/catch 就可以捕获异常。
+
+await 命令后面的 Promise 对象，运行结果可能是 rejected，所以最好把 await 命令放在 try...catch 代码块中。
+
+
+```javascript
+async function myFunction() {
+  try {
+    await somethingThatReturnsAPromise();
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+// 另一种写法
+
+async function myFunction() {
+  await somethingThatReturnsAPromise().catch(function (err){
+    console.log(err);
+  });
+}
+```
