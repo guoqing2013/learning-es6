@@ -19,4 +19,5 @@
 * [16 - Proxy](docs/16%20-%20Proxy.md)
 * [17 - Reflect](docs/17%20-%20Reflect.md)
 * [18 - async](docs/18%20-%20async.md)
+* [19 - Promise](docs/19%20-%20Promise.md)
 
