@@ -24,4 +24,5 @@
 ## 资料
 * [Generator 函数的含义与用法](http://www.ruanyifeng.com/blog/2015/04/generator.html)
 * [async 函数的含义和用法](http://www.ruanyifeng.com/blog/2015/05/async.html)
+* [Promise.all with Async/Await](https://www.taniarascia.com/promise-all-with-async-await/)
 
